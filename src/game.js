@@ -40,7 +40,7 @@ exports.handler = async function(event, context, callback) {
                 label: '現実逃避',
                 text: '[3] 現実逃避'
               }
-            },
+            }
           ]
         }
       }
