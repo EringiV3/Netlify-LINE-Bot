@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 exports.handler = async function(event, context, callback) {
-  const webhookBody = JSON.parse(event.body)
+  const body = JSON.parse(event.body)
   const targetEvent = body.events[0]
 
   const matchResult = targetEvent.message.text.match(/スタート/)
@@ -10,7 +10,7 @@ exports.handler = async function(event, context, callback) {
   }
 
   const data = {
-    replyToken: webhookBody.events[0].replyToken,
+    replyToken: targetEvent.replyToken,
     messages: [
       {
         type: 'text',
