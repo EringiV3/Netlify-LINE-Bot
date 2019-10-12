@@ -1,0 +1,26 @@
+{
+  "name": "netlify-line-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-lambda": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify-lambda build src/",
+    "serve": "netlify-lambda serve src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EringiV3/Netlify-LINE-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EringiV3/Netlify-LINE-Bot/issues"
+  },
+  "homepage": "https://github.com/EringiV3/Netlify-LINE-Bot#readme"
+}
